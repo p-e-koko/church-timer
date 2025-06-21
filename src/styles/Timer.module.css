@@ -1,0 +1,86 @@
+.container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(165deg, #000000, #0B325F);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem; /* Prevent text from touching screen edges on small devices */ /* Prevent horizontal overflow */
+  text-align: center;
+  overflow: -1; /* Center all text inside container */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top:0rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.timer {
+  font-size: 15vw;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .container {
+    padding-right: 2rem; /* Add extra right padding for mobile */
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .timer {
+    font-size: 15vw;
+  }
+
+  .subtitle {
+    font-size: 0.1rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .timer {
+    font-size: 18vw;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large devices (desktops and above) */
+@media (min-width: 769px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .timer {
+    font-size: 12vw;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
