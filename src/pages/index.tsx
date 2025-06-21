@@ -58,7 +58,7 @@ export default function Home() {
             onChange={(e) => setInputMinutes(e.target.value)}
             placeholder="Minutes"
             style={{
-              fontSize: "1rem",
+              fontSize: "1.2rem",
               padding: "0.5rem",
               width: "150px",
               textAlign: "center",
@@ -71,7 +71,7 @@ export default function Home() {
           <button
             onClick={handleStart}
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1rem",
               padding: "0.5rem 1.5rem",
               borderRadius: "6px",
               border: "none",
