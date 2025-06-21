@@ -68,7 +68,7 @@ export default function Home() {
             }}
           />
           <br />
-          <button
+            <button
             onClick={handleStart}
             style={{
               fontSize: "1rem",
@@ -78,10 +78,19 @@ export default function Home() {
               backgroundColor: "#ffffff",
               color: "black",
               cursor: "pointer",
+              transition: "background 0.2s, color 0.2s",
             }}
-          >
+            onMouseOver={e => {
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = "#17365f";
+              (e.currentTarget as HTMLButtonElement).style.color = "white";
+            }}
+            onMouseOut={e => {
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = "#ffffff";
+              (e.currentTarget as HTMLButtonElement).style.color = "black";
+            }}
+            >
             Start Timer
-          </button>
+            </button>
         </>
       )}
 
@@ -97,12 +106,6 @@ export default function Home() {
             Current Time: {formattedTime}
           </div>
         </>
-      )}
-
-      {secondsLeft === 0 && (
-        <h1 className={styles.title} style={{ color: "#ff4444" }}>
-          🙌 Service Started!
-        </h1>
       )}
     </div>
   );
