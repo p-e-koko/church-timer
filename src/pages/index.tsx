@@ -71,12 +71,12 @@ export default function Home() {
           <button
             onClick={handleStart}
             style={{
-              fontSize: "1.5rem",
+              fontSize: "0.5rem",
               padding: "0.5rem 1.5rem",
               borderRadius: "6px",
               border: "none",
-              backgroundColor: "#4ca1af",
-              color: "white",
+              backgroundColor: "#ffffff",
+              color: "black",
               cursor: "pointer",
             }}
           >
